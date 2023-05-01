@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#e9e9e96e ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    height: 100%;
+}
+.weather-card{
+    width: 25%;
+    margin:250px auto;
+    border-radius: 20px;
+    box-shadow:0 0 20px 3px #bfa8bc;
+    transition: 0.5s;
+    opacity: 0.8;
+    background:-webkit-linear-gradient(220deg,#fbbb88,#f66eb3,#bd3add);
+}
+.weather-search .location{left: 8px;top: 5px;}
+.weather-search .location i{font-size: 14px;}
+.weather-search i{ color: #a5a5a5;}
+.weather-search .search button{transition: 0.5s;}
+.weather-search .search button:hover{
+    background:-webkit-linear-gradient(220deg,#f47393,#d770f7) !important;
+    border: 1px solid transparent;
+}
+.weather-search .search button:hover i{color: #fff;}
+.weather-temp .img{width: 200px;height: 150px;}
+.weather-temp .deg-details h3{font-size: 50px;font-weight: bolder;}
+.weather-temp .deg-details sup{font-size: 25px;top:15px;font-weight: 600;}
+.weather-temp .deg-details h4{font-weight: bolder;}
+.weather-temp .deg-details .location i{font-size: 15px;}
+.weather-details{background-color: #e9e9e91f;border-radius: 10px;height: 100px;}
+.weather-details .icon i{font-size: 35px;}
+.weather-details .info {line-height: 0.5;margin-left: 10px;}
+.weather-details .info h4{font-size: 20px;font-weight: bolder;}
+.weather-error .err-img{width: 220px;height: 220px;}
+.weather-error .err-msg h4{font-weight: bolder;}
+.weather-temp,.weather-details,.weather-error{display: none;}
+.grow-in{
+    animation: growIn 0.5s ease-in-out;
+}
+@keyframes growIn {
+    0%{transform: scale(0);}
+    100%{transform: scale(1);}   
+}
+@media (max-width:1450px) {
+    .weather-card{width: 30%;}
+}
+@media (max-width:1250px) {
+    .weather-card{width: 35%;}
+}
+@media (max-width:1150px) {
+    .weather-card{width: 40%;}
+}
+@media (max-width:1050px) {
+    .weather-card{width: 45%;}
+}
+@media (max-width:992px) {
+    .weather-card{width: 50%;}
+}
+@media (max-width:768px) {
+    .weather-card{width: 60%;}
+}
+@media  (max-width:600px) {
+    .weather-card{width: 90%;}
+    .weather-details .icon i{font-size: 25px;}
+    .weather-details .info h4{font-size: 16px;font-weight: bolder;}
+    .weather-details .info p{font-size: 16px}
+}
+
+@media  (max-width:280px) {
+    .weather-card{width: 98%;}
+    .weather-details .info h4{font-size: 14px;font-weight: bolder;}
+    .weather-details .info p{font-size: 12px}
+}
